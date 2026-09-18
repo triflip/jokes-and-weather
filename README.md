@@ -1,6 +1,14 @@
-# 🌤️😄 Jokes & Weather App 
+# 🌤️😄 Jokes & Weather 
 A front-end application built with **TypeScript** and **Vite** that displays **random jokes**, **current weather**, and **sunrise/sunset times** using multiple external APIs. 
 Styled with **pure CSS** and enhanced with simple animations for a fun and responsive user experience.
+
+
+
+<div align="center">
+  <img src="src/assets/ui-shoot/ui-shoot.png" width="75%" alt="Jokes & Weather App" />
+</div>
+
+[![Demo](https://img.shields.io/badge/View%20Demo-9932CC?style=for-the-badge)](https://jokes-and-weather.vercel.app/)
 
 ---
 
