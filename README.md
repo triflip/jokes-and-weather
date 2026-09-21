@@ -119,14 +119,18 @@ https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=su
 ---
 
 ## ⚙️ Installation
-```bash
+
 # Clone the repository
 git clone [https://github.com/triflip/S4-API.git](https://github.com/triflip/S4-API.git)
 
 cd S4-API
 npm install
 npm run dev
-🧪 Testing
+
+---
+
+## 🧪 Testing
+
 The app uses Vitest to validate:
 
 API modules (weatherApi, sunTimeApi)
