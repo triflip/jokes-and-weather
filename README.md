@@ -1,8 +1,8 @@
-# 🌤️😄 Jokes & Weather
-
-A front-end application built with **TypeScript** and **Vite** that displays **random jokes**, **current weather**, and **sunrise/sunset times** using multiple external APIs.
-
+# 🌤️😄 Jokes & Weather 
+A front-end application built with **TypeScript** and **Vite** that displays **random jokes**, **current weather**, and **sunrise/sunset times** using multiple external APIs. 
 Styled with **pure CSS** and enhanced with simple animations for a fun and responsive user experience.
+
+
 
 <div align="center">
   <img src="src/assets/ui-shoot/ui-shoot.png" width="75%" alt="Jokes & Weather App" />
@@ -13,88 +13,82 @@ Styled with **pure CSS** and enhanced with simple animations for a fun and respo
 ---
 
 ## 🚀 Features
-
-- **Jokes API** — fetch random jokes with an interactive button.
-- **Rating system** — rate jokes using emojis (🤔, 🤭, 🤣).
-- **Weather API** — get live weather based on your location.
-- **SunTime API** — display sunrise and sunset times.
+- **Jokes API** — fetch random jokes with an interactive button. 
+- **Rating system** — rate jokes using emojis (🤔, 🤭, 🤣). 
+- **Weather API** — get live weather based on your location. 
+- **SunTime API** — display sunrise and sunset times. 
 - **UI/UX polish** — custom `@keyframes` animations.
 
 ---
 
 ## 🛠️ Technologies Used
-
-- **Vite** — bundler and development server
-- **TypeScript** — logic and type safety
-- **CSS** — styling and animations
+- **Vite** — bundler and development server 
+- **TypeScript** — logic and type safety 
+- **CSS** — styling and animations 
 - **External APIs**:
-  - **ICanHazDadJoke** — https://icanhazdadjoke.com/
-  - **Chuck Norris Jokes** — https://api.chucknorris.io/jokes/random
-  - **Nominatim** (OpenStreetMap) — geocoding (city → latitude/longitude)
+  - **ICanHazDadJoke** — https://icanhazdadjoke.com/ 
+  - **Chuck Norris Jokes** — https://api.chucknorris.io/jokes/random 
+  - **Nominatim** (OpenStreetMap) — geocoding (city → latitude/longitude) 
   - **Open-Meteo** — current weather data and sunrise and sunset times
 
 ---
 
 ## 🌐 API Details
 
-### 1. ICanHazDadJoke
-
+### **1. ICanHazDadJoke**
 Random general-purpose jokes.
 
 **Endpoint**
+GET https://icanhazdadjoke.com/
 
-`GET https://icanhazdadjoke.com/`
 
 **Required header**
+Accept: application/json
 
-`Accept: application/json`
 
 ---
 
-### 2. Chuck Norris Jokes API
-
+### **2. Chuck Norris Jokes API**
 Random Chuck Norris–themed jokes.
 
 **Endpoint**
+GET https://api.chucknorris.io/jokes/random
 
-`GET https://api.chucknorris.io/jokes/random`
 
 ---
 
-### 3. Nominatim (OpenStreetMap)
-
-Converts a user's city into latitude/longitude coordinates.
+### **3. Nominatim (OpenStreetMap)**
+Converts a user’s city into latitude/longitude coordinates.
 
 **Example**
+https://nominatim.openstreetmap.org/search?q=${city}&format=json
 
-`https://nominatim.openstreetmap.org/search?q=${city}&format=json`
 
 ---
 
-### 4. Open-Meteo Weather API
-
-Provides current weather, including temperature and wind speed.
+### **4. Open-Meteo Weather API**
+Provides current weather (temperature, wind speed, etc.).
 
 **Endpoint used**
+https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true
 
-`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`
 
 ---
 
-### 5. SunTime API
-
+### **5. SunTime API**
 Gets sunrise and sunset times based on coordinates.
 
 **Endpoint used**
+https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=sunrise,sunset&timezone=auto
 
-`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=sunrise,sunset&timezone=auto`
+
 
 ---
 
 ## 📂 Project Structure
 
-\`\`\`text
-📂 jokes-and-weather/
+```text
+📂 S4-API/
 ├── 📄 index.html             # Root HTML file (entry point for Vite)
 ├── 📄 README.md              # Project documentation
 ├── 📄 package.json           # Dependencies and scripts
